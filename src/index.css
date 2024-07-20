@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-container{
+    border-radius: 20px;
+    background-color: white;
+    height: 55vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    font-family: montserrat;
+    font-weight: 700;
+}
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    
+    
+}
+
+.content-box input{
+    width: 75% ;
+}
+
+.hero-container::before{
+    content: "";
+    height: 55vh;
+    width: 25vw;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient( 45deg ,rgb(222, 95, 116), rgb(79, 79, 216) );
+    filter: blur(25px);
+}
+
+.hero-container h1{
+    font-size: 20px;
+}
+.hero-container input{
+    border: 2px solid black;
+}
+
+.calculation-buttons{
+    justify-content: space-between;
+}
+
+.error-message{
+    margin-top: 5px;
+    color: red;
+}
+.success-message{
+    color: blue;
+}
+
+
+.myButton {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px ;
+  }
